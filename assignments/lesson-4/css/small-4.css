@@ -8,12 +8,13 @@ body {
     font-size: 16px; 
     line-height: 32px;
     font-family: Ubuntu, sans-serif;
-    color: black;
+    color: 939376;
 }
 
 h1 {
     font-size: 250%;
-    color: whitesmoke;
+    font-family: Georgia 20px;
+    color: 515662;
 }
 
 h2 {
@@ -30,8 +31,8 @@ header, main, footer {
 
 header, footer, footer a {
     text-align: center;
-    background-color: gray;
-    color: whitesmoke;
+    background-color: 5d6f96;
+    color: 515662;
 }
 
 header img {
