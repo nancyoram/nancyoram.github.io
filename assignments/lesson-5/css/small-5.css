@@ -2,10 +2,6 @@
 /* You may use #HEX or color names */
 
 /* * is a wildcard referring to all elements. */
-<!DOCTYPE html>
-<html>
-<head>
-<style>
 * { margin: 0; box-sizing: border-box; } 
 
 body { 
@@ -48,6 +44,3 @@ header img {
 footer {
     font-size: 75%;
 }
-
-</body>
-</html>
