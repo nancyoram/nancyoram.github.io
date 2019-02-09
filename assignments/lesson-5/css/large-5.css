@@ -1,52 +1,53 @@
+/* CIT 230 - Assignment Portal CSS Template */
+/* You may use #HEX or color names */
+
+/* * is a wildcard referring to all elements. */
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Tri Cities Weather Today">
-    <title>Tri-Cities Weather Today</title>
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/small-5.css">
-    <link rel="stylesheet" href="/css/large-5.css">
-</head>
+<style>
+* { margin: 0; box-sizing: border-box; } 
 
-<body>
-    <header>
-        <img src="" alt="image">
-        <h1>Local Weather Today</h1>
-        <h2>Rain or Shine we have today's weather.</h2>
-        <div class="subheading"></div>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Preston</a></li>
-            <li><a href="#">Soda Springs</a></li>
-            <li><a href="#">Fish Haven</a></li>
-            <li><a href="#">Storm Center</a></li>
-            <li><a href="#">Gallery</a></li>
-        </ul>
-    </nav>
-    <main>
-        <h2>Preston</h2>
-        <section>
-            <h3>Current Conditions Today</h3>
-            <h3>10 Days Forecast</h3>
-            <img src="" alt="image">
-            <h3>Tri City News Today</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            <img src="" alt="image">
-        </section>
-    </main>
-    <footer>
-        <aside>
-            mymail@mail.com
-        </aside>
-        <p class="footer-bar">
-            &copy; Tri Cities Weather Today <span id="currentdate">2019</span>
-        </p>
-    </footer>
+body { 
+    font-size: 16px; 
+    line-height: 32px;
+    font-family: Ubuntu, sans-serif;
+    color: 939376;
+}
+
+h1 {
+    font-size: 250%;
+    font-family: Georgia 20px;
+    color: 515662;
+}
+
+h2 {
+    font-size: 200%;
+    text-align: center;
+    border-bottom: 1px solid #bbb;
+}
+
+header, main, footer {
+    margin: 1.25rem auto;
+    padding: .5rem;
+    max-width: 600px;
+}
+
+header, footer, footer a {
+    text-align: center;
+    background-color: 5d6f96;
+    color: 515662;
+}
+
+header img {
+    width: 50%;
+    height: 50%;
+    float: right;
+}
+
+footer {
+    font-size: 75%;
+}
+
 </body>
-
 </html>
