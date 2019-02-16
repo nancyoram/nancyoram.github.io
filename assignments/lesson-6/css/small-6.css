@@ -9,8 +9,8 @@
 
 * { margin: 10; padding: 5;}
 
-body { background-color: #cce6ff; }
-header { background-color: #cce6ff; text-align: center;}
+body { background-color: #white; }
+header { background-color: #white; text-align: center;}
 h1 { padding: .5rem; }
 
 nav {	margin: 0 auto;	max-width: 760px; background-color: #000;	}
