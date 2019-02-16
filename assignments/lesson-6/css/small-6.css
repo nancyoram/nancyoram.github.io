@@ -8,12 +8,7 @@
 <style>
 
 * { margin: 0; padding: 0;}
-.center {
-    margin: auto;
-    width: 50%;
-    border: 3px solid green;
-    padding: 10px;
-  }
+
 body { background-color: #ddd; }
 header { background-color: #bbb; text-align: center;}
 h1 { padding: .5rem; }
