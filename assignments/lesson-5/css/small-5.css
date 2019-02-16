@@ -1,100 +1,58 @@
+/* CIT 230 - Assignment Portal CSS Template */
+/* You may use #HEX or color names */
 
+/* * is a wildcard referring to all elements. Changed */
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* { margin: 0; box-sizing: border-box; } 
 
-* { box-sizing: border-box;}  
-
-body {
-
-	font-family: 'Open Sans', sans-serif;
-	font-size: 16px;
-	
+body 
+{
+    background-color: eiei81
 }
 
-header, nav, main, footer { 
+{ 
+    font-size: 16px; 
+    line-height: 32px;
+    font-family: Ubuntu, sans-serif;
+    color: 939376;
 }
 
-p {
-	margin-left: 2%;
+h1 {
+    font-size: 250%;
+    font-family: Georgia 20px;
+    color: 515662;
 }
 
-header {}
-header h1 {
-	text-shadow: -2px 2px #f1f1f1;
-}
-header img { 
-	float: left;
-	width: 10%;
-	min-width: 90px;
-}
-header .subheading {}
-
-nav { clear: left; }
-nav button { float: right; }
-nav ul {
-	list-style-type: none;
-	margin: 2;
-	padding: 2;
-	width: 135px;
-	background-color: #00008B;
-}
-nav ul li { /* width: 90px */
-	text-indent: 0;
-	text-align: left;
+h2 {
+    font-size: 200%;
+    text-align: center;
+    border-bottom: 1px solid #bbb;
 }
 
-.highlow p {
-	
-	text-align: center;
-
+header, main, footer {
+    margin: 1.25rem auto;
+    padding: .5rem;
+    max-width: 600px;
 }
 
-div.current {
-	width: 50%;
+header, footer, footer a {
+    text-align: center;
+    background-color: 5d6f96;
+    color: 515662;
 }
 
-.current p {
-	text-align: center;
+header img {
+    width: 50%;
+    height: 50%;
+    float: right;
 }
 
-.current img {
-	float: right;
-	width: 55px;
+footer {
+    font-size: 75%;
 }
 
-.conditions {
-	clear: right;
-}
-
-nav ul li a { 
-	display: block; 
-	text-decoration: none;
-	padding: 12px 14px;
-	color: white;
-}
-nav ul li.active a {
-	background-color: darkgoldenrod;
-	font-weight: bold;
-}
-nav ul li a:hover {
-	background-color: #DAA520;
-}
-
-main {}
-main h2 { text-align: center; }
-main figure { margin: 0 0 .2rem 2%; width:96%; }
-main figure img { width: 100%; }
-
-section {}
-
-article p.town-article img {  
-	width: 95%; 
-	margin: 2%;
-}
-
-section.forecast {
-	display: none;
-}
-
-
-footer {}
-footer aside {}
-footer>p {} 
+</body>
+</html>
