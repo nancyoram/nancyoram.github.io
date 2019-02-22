@@ -12,121 +12,161 @@
     <link href="css/normalize.css" rel="stylesheet">
     
     <link href="css/small-5.css" rel="stylesheet">
-    
-    <link href="css/medium-5.css" rel="stylesheet">
-    
+         
     <link href="css/large-5.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     
 </head> 
 	
-        <header> <img src="images/seasonlogo.jpeg" alt="All Seasons Weather">
-            
-                <img src="images/prestonsign.jpg" alt="Preston Sign">
-            
-            <span style="font-family: Kaiti TC Regular;"><h1>Preston Weather Today</h1></span1/></span></header>
-  
-   <div class="subheading">Rain or shine, we have today's weather!</div>
-
-
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 14px;
-  text-decoration: none;
-  font-size: 18px;
-}
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-.topnav a.active {
-  background-color: #4CAF50;
-  color: white;
-}
-</style>
 <body>
-<div class="topnav">
-  <a href="#home">Home</a>
-  <a class="active" href="#Preston">Preston</a>
-  <a href="#Soda Springs">Soda Springs</a>
-  <a href="#Fish Haven">Fish Haven</a>
-	<a href="#Storm Center">Storm Center</a>
-	<a href="#Gallery">Gallery</a>
-	</div>
-</body>
-<main>
+
+<!-- HEADER -->
+
+    <header class="clearfix">
+		<figure class="logo">
+		<img src="images/seasonlogo.jpeg" alt="logo">
+		srcset="images/seasonlogo1.jpeg 1x, images/seasonlogo2.jpeg 2x, images/seasonlogo3.jpeg 3x">
+    </figure>
+	
+<h1>Forecast Now</h1>	
+	<div class="subheading"></div>
+	<h2>Rain or shine, we have today's weather!</h2>
+	
+	</header>
+	
+<!-- NAVIGATION -->
+	
+	<nav class="clearfix">
+		<button onclick="toggleMenu ()">&#9776;<button>
 		
+		<ul id="primaryNav" class="hide">
+		<li><a href="#">Home</a></li>
+		<li class="active"><ahref="#">Preston</a></li>
+		<li><a href="#">Soda Springs</a></li>
+    	<li><a href="#">Fish Haven</a></li>
+    	<li><a href="#">Storm Center</a></li>
+    	<li><a href="#">Gallery</a></li>
+		</ul>
+	</nav>
+	
+<!-- MAIN -->
+
+<main class="clearfix">
+
+	<div class="main">
+	<h2Preston</h2>
+	H5>Weather</h5>
+		<figure class="prestonphoto">
+			<img src="images/prestonsign.jpg" alt="Preston Sign">
+			sizes="50vw"
+				srcset= "images/prestonsign200.jpg 200w,
+				images/prestonsign500/jpg 500w,
+				images/prestonsign800.jpg 800w
+				images/prestonsign1100.jpg 1100w"
+		</figure>
+            
+	<p> Beautiful Rain or Shine</p>
+	<p> Lorem ipsum dolor sit amet, consectetuer adipiscing 
+                elit. Aenean commodo ligula eget dolor. Aenean massa 
+                cum sociis natoque penatibus 
+                et magnis dis parturient montes, nascetur ridiculus 
+                mus. Donec quam felis, ultricies nec, pellentesque 
+                eu, pretium quis, sem. Nulla consequat massa quis 
+                enim. Donec pede justo, fringilla vel, aliquet nec, 
+                vulputate eget, arcu. In enim justo, rhoncus ut, 
+                imperdiet a, venenatis vitae, justo. Nullam dictum 
+                felis eu pede </p>
+	<br>
+	<br>
+	
+	<h2>Forecast</h2>
+	
+		<section class='preston">
 		
-			
+		<h3>Weather Summary></h3>
 		
-		<section>
-			<h2>The City of Preston</h2>
-			<div class="highlow">
-				<p>High: 89&deg;F</p>  
-				<p>Low: 79&deg;F</p>  
-			</div>
-			<div class="current">
-				<p>Sunny</p>
-				
-			</div>   
-			<div class="conditions">
-				<p>Precipitation: 4%</p>  
-				<p>Wind Speed: 10 km/h</p>  
-			</div>           
-		</section>
-        <img src="images/seasonlogo.jpeg" alt="All Weather Conditions" height="42" width="42">
-		<section class="forecast">
-			<h3>10 Day Forecast</h3>
-			<table>
-				<thead>
+		<div class="highlow">
+			<p>High:</p>
+			<p>Low:</p>
+		</div>
+		
+		<div class="current">
+		
+			<figure class="mountain">
+			<img src= "images/mountain100.jpg" alt=""Mountain" sizes="50vw"
+				srcset= "Images/mountain200ljpg 200w,
+				images/mountain500ljpg 500w,
+				images/mountain800.jpg 800w,
+				images/mountain1100.jpg 1100w">"
+				<figcaption>Winter</figcaption>
+			</figure>
+		</div>
+		
+		<div class="conditions">
+			<p>Precipitation:</p>
+			<p>Wind Speed:</p>
+		</div>
+	</section>
+	
+	<section class="forecast">
+		<h3>Ten Cay Forecast</h3>
+		<table>
+			<thead>
+				<tr>
+					<th>Day 1</th>
+					<th>Day 2</th>
+					<th>Day 3</th>
+					<th>Day 4</th>
+					<th>Day 5</th>
+					<th>Day 6</th>
+					<th>Day 7</th>
+					<th>Day 8</th>
+					<th>Day 9</th>
+					<th>Day 10</th>
+				</tr>
+			</thead>
+				<tbody>
 					<tr>
-						<th>Day 1</th>
-						<th>Day 2</th>
-						<th>Day 3</th>
-						<th>Day 4</th>
-						<th>Day 5</th>
-						<th>Day 6</th>
-						<th>Day 7</th>
-						<th>Day 8</th>
-						<th>Day 9</th>
-						<th>Day 10</th>
-					</tr>
-				</thead>
-				<tbody>  
-					<tr>
-						<td>80&deg;F</td>
-						<td>87&deg;F</td>
-						<td>78&deg;F</td>
-						<td>75&deg;F</td>
-						<td>72&deg;F</td>
-						<td>72&deg;F</td>
-						<td>79&deg;F</td>
-						<td>80&deg;F</td>
-						<td>85&deg;F</td>
-						<td>82&deg;F</td>
+					<td>43&deg;F<td>
+					<td>40&deg;F<td>
+					<td>43&deg;F<td>
+					<td>41&deg;F<td>
+					<td>41&deg;F<td>
+					<td>39&deg;F<td>
+					<td>35&deg;F<td>
+					<td>33&deg;F<td>
+					<td>32&deg;F<td>
+					<td>30&deg;F<td>
 					</tr>
 				</tbody>
-			</table>
-		</section>
-
+		</table>
+	</section>
+	
+	<h2Soda Springs</h2>
+	H5>Weather</h5>
+	<p> Lorem ipsum dolor sit amet, consectetuer adipiscing 
+                elit. Aenean commodo ligula eget dolor. Aenean massa 
+                cum sociis natoque penatibus 
+                et magnis dis parturient montes, nascetur ridiculus 
+                mus. Donec quam felis, ultricies nec, pellentesque 
+                eu, pretium quis, sem. Nulla consequat massa quis 
+                enim. Donec pede justo, fringilla vel, aliquet nec, 
+                vulputate eget, arcu. In enim justo, rhoncus ut, 
+                imperdiet a, venenatis vitae, justo. Nullam dictum 
+                felis eu pede </p>
+		</div>
+		
 		<article>
-			<h3>Preston Night Rodeo</h3>	
-			<p class="town-article">
-				<img src="images/rodeo.jpg" alt="Preston Night Rodeo">
-				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing 
+			<h2> Preston Night Rodeo</h2>
+			<figure class="rodeo">
+			<img src= "images/rodeo100.jpg" alt="Preston Night Rodeo" sizes="50vw"
+				srcset= "images/rodeo200.jpg 200w,
+				images/rodeo500.jpg 500w,
+				images/rodeo800.jpg 800w,
+				images/rodeo1100.jpg 1100w">
+			<figcaption> Preston Famous Night Rodeo</figcaption>
+			</figure>
+		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing 
                 elit. Aenean commodo ligula eget dolor. Aenean massa 
                 cum sociis natoque penatibus 
                 et magnis dis parturient montes, nascetur ridiculus 
@@ -144,19 +184,28 @@ body {
                 viverra nulla ut metus varius laoreet. Quisque rutrum. 
                 Aenean imperdiet. Etiam ultricies nisi vel augue. 
                 Curabitur ullamcorper ultricies nisi. Etiam ultricies nisi vel augue.
-</p>
-		</article>		  
+		</p>
 
+		</article>
 	</main>
-
-<footer>
-<p>  <img src="images/seasonlogo.jpeg" alt="All Weather Conditions" height="42" width="42">
-                Preston Weather Today, 4242 Brentwood Circle, Preston, Idaho
-
-info@prestonweathertoday.com
-<br><hr style="width: 100%; height: 2px;"><br>
 	
-</p>	
-	<footer>&copy;2019 All Rights Reserved | Nancy Oram | <span id="currentdate">02/04/2019</span>
+<!-- FOOTER -->
+
+	<footer class="clearfix">
+		<section>
+			Contact information placeholder
+			999-999-9999
+			123 Main Street, Preston, ID 99999
+			Google Map
+		</section>
+		
+		<section class="footer-bar">&copy;2019 | All Rights Reserved | Preston Weather Today |
+		<span id="currentdate">Current Date Placeholder</span>
+		</section>
 	</footer>
+	<script src="scripts/hamburger.js"></script>
+	<script src="scripts/currentdate.js"></script>
+	
+	</body>
 	</html>
+	
