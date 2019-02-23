@@ -1,0 +1,85 @@
+!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gallery | Weather Sentinel</title>
+  <meta name="description" content="Picture Gallery">
+  <!-- external style references in the proper cascading order -->    
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">  <!-- Google API font reference -->
+  <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="styles/main-7.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="styles/large-7.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+</head>
+<body>
+
+  <header>
+    <img src="images/weatherlogo.jpeg" alt="Preston Weather Today" width="80">
+    <h1>Preston Weather Today</h1>
+    <div class="subheading">Rain or shine, we have the weather.</div>
+  </header>
+
+  <!-- site navigation use placeholder references -->
+  <nav class="fixed">
+    <button onclick="toggleNavMenu()">&#9776;</button>
+    <ul class="topnav" id="hamburger">
+    	<li><a href="#">Home</a></li>
+    	<li><a href="preston-7.html">Preston</a></li>
+    	<li><a href="#">Soda Springs</a></li>
+    	<li><a href="#">Fish Haven</a></li>
+    	<li><a href="#">Storm Center</a></li>
+    	<li class="active"><a href="#">Gallery</a></li>
+    </ul>		
+  </nav>
+    
+  <main>
+    <h2>Gallery</h2>
+    
+    <div class="grid">
+      
+      <figure>
+        <img src="images/weather-1.jpg" alt="Gallery Image 1">
+        <figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/weather-2.jpg" alt="Gallery Image 2">
+        <figcaption>Sed gravida eros eget est egestas lobortis.</figcaption>
+      </figure>
+      
+      <figure>
+        <img src="images/weather-3.jpg" alt="Gallery Image 3">
+        <figcaption>Nullam sed ipsum facilisis, sodales orci nec, interdum tellus.</figcaption>
+      </figure>
+      
+      <figure>
+        <img src="images/weather-4.jpg" alt="Gallery Image 4">
+        <figcaption>Mauris eget elit efficitur, faucibus libero eget, semper nisl.</figcaption>
+      </figure>
+      
+      <figure>
+        <img src="images/weather-5.jpg" alt="Gallery Image 5">
+        <figcaption>Integer non lorem ut felis mattis placerat vel eget enim.</figcaption>
+      </figure>
+      
+      <figure>
+        <img src="images/weather-6.jpg" alt="Gallery Image 6">
+        <figcaption>Curabitur efficitur justo et neque ultricies, dapibus porttitor orci sollicitudin.</figcaption>
+      </figure>
+      
+    </div>
+    
+    
+  </main>
+    
+  <footer>
+    
+    <p class="footer-bar">&copy;2019 All Rights Reserved | Preston Weather Today | <span id="currentdate"></span></p>
+  </footer>
+
+  <script src="scripts/hamburger.js"></script>
+  <script src="scripts/currentdate.js"></script>
+  <script src="scripts/windchill.js"></script>
+
+</body>
+</html>
