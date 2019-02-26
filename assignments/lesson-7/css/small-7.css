@@ -34,7 +34,7 @@ header h1 {
 header img {
   height: 100%;
   width: auto;
-  position: absolute;
+  position: relative;
   left: 0;
   top: 0;
   
