@@ -15,12 +15,12 @@ body {
 
 header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
   /* Declare the maximum width and other main element rules to limit the stretch on wide views */
-max-width: 100rem;
+max-width: 80rem;
 }
 
 header {
   color: snow;
-  background-color: darkgreen;
+  background-color: rgb(100, 37, 0);
   position: relative;
 }
 
