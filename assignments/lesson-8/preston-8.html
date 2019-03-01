@@ -1,0 +1,257 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* {
+  box-sizing: border-box;
+}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+  font-size: 16px;
+  font-family: Ubuntu, Geneva, sans-serif;
+  color: black;
+  background-color: snow;
+  /* Declare the base font-family - from google font api or other */
+  margin: 0% 2%;
+}
+
+header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+max-width: 80rem;
+}
+
+header {
+  color: snow;
+  background-color: darkgreen;
+  position: relative;
+}
+
+header h1 {
+  padding-left: 3rem;
+  padding-top: 1%;
+  white-space: nowrap;
+  margin: 0;
+}
+
+header img {
+  height: 100%;
+  width: auto;
+  position: absolute;
+  left: 0;
+  top: 0;
+  
+  }
+
+header .subheading {
+  padding-left: 3rem;
+  padding-bottom: 1%;
+  font-style: italic;
+  white-space: nowrap;
+}
+
+nav {
+
+  font-size: 14px
+}
+
+nav button {
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+nav ul.topnav {
+  display: none;
+  list-style-type: none;
+  margin  : auto;
+  padding: 0;
+  background-color: lightgreen;
+}
+
+.responsive {
+  display: block;
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
+  background-color: lightgreen;
+}
+
+nav ul li {
+  border-bottom: 1px solid indigo;
+}
+
+  nav ul li:last-child {
+    border-bottom: none;
+  }
+
+nav ul li a {
+    display: block;
+    color: indigo;
+    text-align: center;
+    padding: 12px 12px;
+    text-decoration: none;
+}
+.franklin li.franklin a,
+.gallery li.gallery a,
+.stormcenter li.stormcenter a {
+    background-color: gold;
+}
+
+
+nav ul li a:hover {
+    background-color: yellow;
+}
+
+main {}
+
+main h2, main h3 {
+  text-align: center;
+}
+
+main p {
+  padding-left: 3rem;
+}
+
+main figure {
+  margin: 0 0 .2rem 0; width:100%;
+}
+
+main figure img {
+  width: 100%;
+}
+
+footer {
+  padding: 1px 10px;
+  color: indigo;
+  background-color: lightgreen;
+  font-size: 0.7rem;
+}
+footer aside {
+  font-style: italic;
+}
+
+footer aside p {
+  margin: 3px;
+}
+
+footer>p {
+  padding: 0;
+  margin: 10px 0;
+} /* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */
+
+.data {
+  font-weight: bold;
+}
+
+article {
+  border: 1px solid indigo;
+  padding: 0 5px;
+}
+
+article img {
+  width: 96%;
+  margin: 0 1rem;
+}
+
+
+table {
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+table, th, td {
+  border: 1px solid indigo;
+}
+
+
+.highlow, .current, .conditions {
+  margin: 0 20px;
+}
+
+.summary {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.forecast {
+  display: none;
+  margin: 5px;
+  align-content: center;
+  text-align: center;
+}
+
+.flex3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+  padding: 1rem;
+}
+  
+.grid figcaption {
+    padding: 0.3rem;
+  }
+
+/* Forms Styling */
+
+form {
+  margin: 1rem auto;
+  max-width: 24rem;
+  font-size: 0.8rem;
+}
+
+fieldset {
+  background-color: bisque;
+  margin: 1rem;
+  border: indigo solid 1px;
+  border-radius: 0.2rem;
+}
+
+legend {
+  color: snow;
+  background-color: darkgreen;
+  margin-left: 7%;
+  padding: .4rem;
+  border: indigo solid 1px;
+  border-radius: 0.2rem;
+}
+
+label {
+  display: block;
+  margin: .5rem;
+  }
+
+label span {
+  display: block;
+  padding-top: 0.7rem;
+  padding-bottom: 0.2rem;    
+}
+
+label span#severity {
+  display: inline;
+  margin-left: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+input.submitBtn {
+  color: indigo;
+  background-color: lightgreen;
+  font-weight: bold;
+  border: solid 1px indigo;
+  width: 40%;
+  margin: 0.5rem 1rem ;
+  padding: 0.6em;
+  border-radius: 0.2rem;
+}
+
+input.submitBtn:hover {
+  background-color: yellow;
+}
