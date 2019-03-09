@@ -21,8 +21,20 @@ max-width: 70rem;
 header {
   color: snow;
   background-color: rgb(238, 121, 54);
+  text-align: center;
+  padding: .5em;
+    display: flex;
+    flex-direction: row;
   /*position: relative;*/
 
+}
+.logo {
+  width: 4rem;
+  height: 4rem;
+}
+
+.heading {
+  width: 100vw
 }
 
 header h1 {
@@ -44,6 +56,8 @@ header .subheading {
   padding-left: 5rem;
   padding-bottom: 1%;
   font-style: italic;
+  font-size: 1.0em;
+  text-align: center;
   white-space: nowrap;
  
 }
@@ -194,3 +208,24 @@ table, th, td {
 .grid figcaption {
     padding: 0.3rem;
   }
+  .gallery_item {
+    min-width: 100%;
+    padding: 2em;
+
+}
+
+article.townData{
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: .25rem .25rem 1rem black;
+    max-width: 100%;
+
+}
+
+.gallery_item img {
+    max-width: 100%;
+    min-width: 100%;
+    border-radius: 1rem;
+    box-shadow: .25rem .25rem 1rem black;
+}
