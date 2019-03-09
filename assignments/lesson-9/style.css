@@ -2,6 +2,7 @@
 
 html {
   font-family: 'helvetica neue', helvetica, arial, sans-serif;
+  background: linear-gradient(#ff1a1a, #000);
 }
 
 body {
