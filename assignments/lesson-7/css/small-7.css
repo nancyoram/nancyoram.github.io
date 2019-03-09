@@ -213,6 +213,12 @@ table, th, td {
     padding: 2em;
 
 }
+.gallery_grid {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: auto;
+  padding: 2rem;
+}
 
 article.townData{
     border: 1px solid #ccc;
