@@ -270,3 +270,45 @@ form label input:required:valid {
   
   
 }
+
+/* Styles for Home Page */
+
+.homePage article {
+  width: 80%;
+  text-align: center;
+  background-color: #fff;
+  margin: 25px auto;
+  border: 4px solid #214459;
+  box-shadow: 4px 4px 8px #2e2c2a;
+  position: relative;
+}
+
+.homePage section {
+  background-color: #b1b0ae;
+  padding: 20px;
+}
+
+#townTitle {
+  text-align: center;
+}
+
+.homePage section h2 {
+  color: #214459;
+}
+
+.homePagesection p {
+  width: 70%;
+  margin: 10px auto;
+}
+
+article img {
+  width: 100%;  
+}
+
+.homePage section p:nth-child(2) {
+  font-style: italic; 
+}
+
+#currentEvents {
+  text-align: center;
+}
