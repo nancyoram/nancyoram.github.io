@@ -1,0 +1,231 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    font-family: 'Open Sans';
+}
+
+header,
+nav,
+main,
+footer{
+    max-width: 37.5em;
+}
+
+header {
+    background: #2255aa;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    color: #bbcccc;
+    padding: .5em;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.logo img {
+    height: 15vw;
+}
+
+.heading {
+    width: 100vw
+}
+
+header h1 {
+    font-size: 2.0em;
+    text-shadow: 2px 2px 2px #444;
+}
+
+header .subheading {
+    font-size: 1.0em;
+    text-align: center;
+}
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #eee;
+}
+
+nav {
+    background-color: #669944;
+    font-family: 'Montserrat';
+    font-size: 1em;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: flex;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #eee;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+nav ul li.active a {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+}
+
+nav ul li a:hover {
+    color: #000;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+nav ul.hide {
+    display: none;
+}
+
+main h2 {
+    text-align: center;
+    font-family: 'Open Sans';
+    font-size: 1.5em;
+}
+.weather div p{
+    text-align: center;
+    position:relative;
+    top: -10px;
+}
+
+figure {
+    margin: 0 0 .2rem 2%;
+    width: 96%;
+}
+
+figcaption {
+    text-align: center;
+    font-family: 'Open Sans';
+    font-size: 1rem;
+    font-weight: 600;
+    padding-top: .5rem;
+}
+
+
+.weather_pic img {
+    max-width: 100%;
+    padding: .5rem;
+}
+
+
+section.weather-summary figure {
+display:inline;
+}
+div#iconbox {
+    border: 2px solid gray;
+    width: 15vw;
+    height: 15vw;
+    border-radius: 25%;
+    align-content: center;
+    margin: 1rem;
+    max-height: 6rem;
+    max-width: 6rem;
+}
+section.weather-summary h3{
+    text-align: center;
+}
+div.currentConditions {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+}
+
+#weather_icon {
+height:100%
+}
+
+section.forecast {
+    display: none;
+    text-align: center;
+}
+
+section.forecast table,
+th,
+td {
+    margin: auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+article h3 {
+    position: relative;
+    margin-left: 1rem;
+}
+
+main article p {
+    text-align: justify;
+    margin: .5rem;
+}
+
+.news_pic img {
+    width:100%;
+    height: auto;
+    padding: .5rem;
+    margin: .25rem;
+    box-shadow: .5rem .25rem 1rem gray;
+}
+
+.gallery_grid {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: auto;
+    padding: 2rem;
+    width: 100vw;
+}
+
+.gallery_grid a {
+    text-decoration: none;
+    color: black;
+}
+
+.gallery_item {
+    min-width: 100%;
+    padding: 2em;
+}
+
+article.townData {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: .25rem .25rem 1rem black;
+    max-width: 100%;
+    height: 100%;
+}
+
+article.townData img {
+    width: 100%;
+    border-radius: .75rem;
+    box-shadow: .25rem .25rem 1rem;
+
+}
+
+.gallery_item img {
+    max-width: 100%;
+    min-width: 100%;
+    border-radius: 1rem;
+    box-shadow: .25rem .25rem 1rem black;
+}
+
+footer,
+div.subfooter{
+
+    font-family: Montserrat;
+    background-color: #5599bb;
+    padding: .5em;
+    text-align: center;
+    min-width: 100%;
+
+
+}

@@ -1,0 +1,96 @@
+* { margin: 0; box-sizing: border-box; } 
+
+body { 
+    font-size: 16px; 
+    line-height: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkgreen;
+}
+
+h1 {
+    font-size: 2rem;
+    color: whitesmoke;
+}
+
+h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    border-bottom: 1px solid #bbb;
+}
+
+h3 {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+section {
+  border-bottom: dotted #bbb;
+}
+
+header, main, footer {
+    margin: 1.25rem auto;
+    padding: .5rem;
+    max-width: 800px;
+}
+
+header, footer, footer a {
+    text-align: center;
+    background-color: darkslategrey;
+    color: whitesmoke;
+}
+
+footer {
+    font-size: x-small;
+}
+
+/* Table Styling */
+
+table {
+  font-family: Ubuntu, sans-serif;
+  margin: 2rem auto;
+  text-align: center;
+  border: 1px solid #bbbbbb;
+  border-collapse: collapse;
+  box-shadow: 10px 10px 15px #628ca6;
+  color: black;
+}
+
+th, td {
+  border: 1px solid #bbbbbb;
+  padding: 0rem 0.5rem;
+}
+
+thead th {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.2rem 0.4rem;
+  background-color: #628ca6;
+  color: white;
+}
+
+thead tr:first-child th {
+  font-size: 1.7rem;
+  padding: 0.4rem;
+  background-color: #7fb9c2;
+  color: black;
+}
+
+tfoot td {
+  font-size: 0.7rem;
+  font-weight: bold;
+  background-color: #7fb9c2;
+}
+
+
+tbody tr:nth-child(odd) {
+  background-color: #e7f0ed;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #e7ffed;
+}
+
+td.selected {
+  background-color: #628ca6;
+  color: white;
+}

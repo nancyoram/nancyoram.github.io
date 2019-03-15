@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <title>Home</title>
+        <meta name="description" content="Home Page">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/small-7.css">
+        <link rel="stylesheet" href="css/medium-7.css">
+        <link rel="stylesheet" href="css/large-7.css">
+    </head>
+
+    <body>
+        <header>
+            <img src="images/seasonlogo.jpeg" alt="Preston Weather Today" width="80">
+            <h1>Preston Weather Today</h1>
+            <div class="subheading">Rain or shine, we have today's weather!</div>
+          </header>
+        <nav class="fixed">
+            <button onclick="toggleNavMenu()">&#9776;</button>
+            <ul class="topnav" id="hamburger">
+                <li><class="active"><a href="index.html">Home</a></li>
+                <li><a href="preston-7.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery-7.html">Gallery</a></li>
+            </ul>		
+          </nav>
+        
+          <section class="gallery_grid"></section>
+
+        <footer>
+            <footer>
+    
+                <p class="footer-bar">&copy;2019 All Rights Reserved | Preston Weather Today | <span id="currentdate">Current Date Placeholder</span></p>
+              </footer>
+        </footer>
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/hamburger-7.js"></script>
+        <data src="data/towndata.json"></data>
+        <script src="scripts/windchill.js"></script>
+    </body>
+</html>
