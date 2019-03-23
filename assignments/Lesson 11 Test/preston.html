@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-  <title>Franklin City | Weather Sentinel</title>  
-  <meta name="description" content="Franklin City Weather Forecast">  
+  <title>Preston | Weather Today</title>  
+  <meta name="description" content="Preston Weather Forecast">  
     
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="author" content="Vladislovas Karalius">
+  <meta name="author" content="Nancy Oram">
   <!-- external style references in the proper cascading order -->    
   <link href="https://fonts.googleapis.com/css?family=Ubuntu:regular,italic,bold" rel="stylesheet">  <!-- Google API font reference -->
   <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
@@ -19,9 +19,9 @@
 
   <header>  
     
-    <a href="index.php"><img src="images/logo.png" alt="Weather Sentinel Logo"></a>
-    <h1>Weather Sentinel</h1>
-    <div class="subheading">We watch the weather for you.</div>
+    <a href="index.html"><img src="images/seasonlogo.jpg" alt="Weather Today Logo"></a>
+    <h1>Weather Today</h1>
+    <div class="subheading">Rain or shine we have today's weather!</div>
   
   </header>
 
@@ -30,12 +30,12 @@
     
     <button onclick="toggleNavMenu()">&#9776;</button>
     <ul class="topnav" id="hamburger">
-    	<li><a href="index.php">Home</a></li>
+    	<li><a href="index.html">Home</a></li>
     	<li><a href="preston.html">Preston</a></li>
     	<li><a href="sodasprings.html">Soda Springs</a></li>
-    	<li><a href="springfield.php">Springfield</a></li>
-    	<li><a href="stormcenter.php">Storm Center</a></li>
-    	<li><a href="gallery.php">Gallery</a></li>
+    	<li><a href="fishhaven.html">Fish Haven</a></li>
+    	<li><a href="stormcenter.html">Storm Center</a></li>
+    	<li><a href="gallery.html">Gallery</a></li>
     </ul>		
  
   </nav>
@@ -44,13 +44,13 @@
     
     <div class="flex1">
       <section>
-        <h2>The City of Franklin</h2>
+        <h2>Preston</h2>
         <figure>
-          <img src="images/franklin-small.jpg" alt="Franklin"
+          <img src="images/preston town.jpg" alt="Preston"
                sizes="100vw"
-               srcset="images/franklin-small.jpg 600w,
-                       images/franklin-medium.jpg 1024w,
-                       images/franklin-large.jpg 1280w">
+               srcset="images/preston town.jpg 600w,
+                       images/preston town.jpg 1024w,
+                       images/preston town.jpg 1280w">
         </figure>
       </section>
 
@@ -67,7 +67,7 @@
               Sunny
             </div>
             <picture>
-                <img src="images/sunny.jpg" alt="Sunny" width="70" height="70">
+                <img src="images/sun.jpg" alt="Sunny" width="70" height="70">
             </picture>
           </div>
           <div class="conditions">
@@ -119,9 +119,9 @@
     </section>
       
     <article>
-      <h3>Franklin Breaks Record</h3>	
+      <h3>Preston Breaks Record</h3>	
       <div class="flex3">
-        <img src="images/franklin-city-news.jpg" alt="City News" width="400">
+        <img src="images/news.jpg" alt="City News" width="400">
         <p class="town-article">
           Lorem ipsum dolor sit amet, veri volumus disputationi ne pro, solum integre id usu. Pro ad aperiri diceret intellegat, illud solet deseruisse id vix. His ad partiendo interpretaris, vis ne porro ponderum dignissim. Quo ea laudem docendi concludaturque, utinam ubique facilis pri te. An duo nullam dicunt eligendi. An per accusam pertinax intellegat. Lorem ipsum dolor sit amet, veri volumus disputationi ne pro, solum integre id usu. Pro ad aperiri diceret intellegat, illud solet deseruisse id vix. His ad partiendo interpretaris, vis ne porro ponderum dignissim. Quo ea laudem docendi concludaturque, utinam ubique facilis pri te. An duo nullam dicunt eligendi. An per accusam pertinax intellegat.
         </p>
@@ -133,14 +133,15 @@
   <footer>  
     
     <aside>
-      <p>Vladislovas Karalius, Lithuania</p>
-      <p><a href="mailto:vladislovas.karalius@gmail.com?Subject=Weather%20Sentinel">vladislovas.karalius@gmail.com</a></p>
+      <p>Nancy Oram, California</p>
+      <p><a href="mailto:oram@byui.edu">oram@byui.edu</a></p>
     </aside>
-    <p class="footer-bar">&copy;2017 All Rights Reserved | Weather Sentinel | 
+    <p class="footer-bar">&copy;2019 All Rights Reserved | Weather Today | 
       <span>Saturday, 23 March 2019</span></p>
   
   </footer>
-
+  
+  <script src="scripts/weatherapi.js"></script>
   <script src="scripts/hamburger.js"></script>
   <script src="scripts/windchill.js"></script>
   <script src="scripts/wayfinding.js"></script>
