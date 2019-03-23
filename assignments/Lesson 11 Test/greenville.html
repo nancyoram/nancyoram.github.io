@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <title>Greenville City | Weather Sentinel</title>  
+  <meta name="description" content="Greenville City Weather Forecast">  
+    
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Vladislovas Karalius">
+  <!-- external style references in the proper cascading order -->    
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:regular,italic,bold" rel="stylesheet">  <!-- Google API font reference -->
+  <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="styles/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="styles/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="styles/large.css" rel="stylesheet">   <!-- large/wide/desktop views -->
+  
+</head>
+<body class>
+
+  <header>  
+    
+    <a href="index.php"><img src="images/logo.png" alt="Weather Sentinel Logo"></a>
+    <h1>Weather Sentinel</h1>
+    <div class="subheading">We watch the weather for you.</div>
+  
+  </header>
+
+  <!-- site navigation use placeholder references -->
+  <nav class="fixed">
+    
+    <button onclick="toggleNavMenu()">&#9776;</button>
+    <ul class="topnav" id="hamburger">
+    	<li><a href="index.php">Home</a></li>
+    	<li><a href="franklin.php">Franklin</a></li>
+    	<li><a href="greenville.php">Greenville</a></li>
+    	<li><a href="springfield.php">Springfield</a></li>
+    	<li><a href="stormcenter.php">Storm Center</a></li>
+    	<li><a href="gallery.php">Gallery</a></li>
+    </ul>		
+ 
+  </nav>
+    
+  <main>
+    
+    <div class="flex1">
+      <section>
+        <h2>The City of Greenville</h2>
+        <figure>
+          <img src="images/greenville-small.jpg" alt="Greenville"
+               sizes="100vw"
+               srcset="images/greenville-small.jpg 600w,
+                       images/greenville-medium.jpg 1024w,
+                       images/greenville-large.jpg 1280w">
+        </figure>
+      </section>
+
+      <section class="summary">
+        <h3>Weather Summary</h3>
+
+        <div class="flex2">
+          <div class="highlow">
+            <p>High: <span class="data"><span id="high">85</span>&deg;F</span></p>
+            <p>Low: <span class="data"><span id="low">60</span>&deg;F</span></p>
+          </div>
+          <div class="current">
+            <div class="vertical">
+              Sunny
+            </div>
+            <picture>
+                <img src="images/sunny.jpg" alt="Sunny" width="70" height="70">
+            </picture>
+          </div>
+          <div class="conditions">
+            <p>Precipitation: <span class="data">10%</span></p>
+            <p>Wind Speed: <span class="data"><span id="wind">10</span> mph SW</span></p>  
+          </div>
+          <div>
+            <p>Wind Chill: <span class="data"><span id="chill"></span>&deg;</span></p>
+          </div>
+        </div>
+      </section>
+    </div>
+    
+    <section class="forecast">
+      <h3>10 Day Forecast</h3>
+      <table>
+	    <thead>
+          <tr>
+            <th>Day 1</th>
+            <th>Day 2</th>
+            <th>Day 3</th>
+            <th>Day 4</th>
+            <th>Day 5</th>
+            <th>Day 6</th>
+            <th>Day 7</th>
+            <th>Day 8</th>
+            <th>Day 9</th>
+            <th>Day 10</th>
+          </tr>
+		</thead>
+        <tbody>  
+          <tr>
+            <td>84&deg;F</td>
+            <td>84&deg;F</td>
+            <td>80&deg;F</td>
+            <td>75&deg;F</td>
+            <td>72&deg;F</td>
+            <td>70&deg;F</td>
+            <td>75&deg;F</td>
+            <td>75&deg;F</td>
+            <td>77&deg;F</td>
+            <td>85&deg;F</td>
+          </tr>
+		</tbody>
+      </table>
+    </section>
+     
+    <section id="cityinfo">
+    </section>
+      
+    <article>
+      <h3>Greenville Festival</h3>	
+      <div class="flex3">
+        <img src="images/greenville-city-news.jpg" alt="City News" width="400">
+        <p class="town-article">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et placerat nisi. Fusce tincidunt, erat ac viverra posuere, libero sem sagittis tellus, sed sollicitudin ante orci ac odio. Praesent gravida mi at lorem convallis, eu consectetur libero bibendum. Donec blandit, leo a cursus accumsan, sem risus sodales erat, et dapibus augue nunc vitae tellus. Nunc id eros fringilla est vehicula porta. Donec volutpat sed risus ut molestie. Sed ullamcorper ex id purus vestibulum, non suscipit lectus ullamcorper. Aliquam ac lectus ullamcorper, porta massa ac, convallis augue. Etiam vitae consequat augue. Fusce nec hendrerit lorem. Curabitur dui arcu, fringilla eu consequat sit amet, aliquam condimentum leo. In vel convallis mauris. Morbi condimentum urna malesuada eros dictum finibus. Mauris convallis eu metus eu convallis. Morbi cursus a massa eu iaculis. Sed nisi dolor, varius ac diam rhoncus, aliquam accumsan dui. Suspendisse erat sapien, hendrerit faucibus ornare sit amet, interdum id dolor. Proin in dolor viverra, vulputate est sit amet, aliquam arcu. Cras eu lacus consequat quam venenatis finibus. Nullam et lacus at purus feugiat viverra eu at lectus. Quisque rutrum faucibus massa vel bibendum. Nullam porta erat quis sodales sollicitudin. Donec tempus nunc a ligula condimentum, in congue nisi accumsan. Suspendisse nisi odio, pretium sit amet accumsan quis, molestie at neque. Sed nunc mauris, vulputate sit amet odio non, tristique mattis magna. Cras convallis nunc vitae dolor vestibulum, quis accumsan tellus fermentum. Nulla pharetra lorem eget volutpat gravida. Vivamus nunc ipsum, posuere sit amet congue sit amet, aliquam a eros. Aenean blandit metus purus, at tincidunt ipsum accumsan quis. Sed est ex, mollis ac sem ac, faucibus mattis lorem. Ut sed nulla nibh. Ut cursus nec mi eu eleifend.
+        </p>
+      </div>
+    </article>		  
+  
+  </main>
+    
+  <footer>  
+    
+    <aside>
+      <p>Vladislovas Karalius, Lithuania</p>
+      <p><a href="mailto:vladislovas.karalius@gmail.com?Subject=Weather%20Sentinel">vladislovas.karalius@gmail.com</a></p>
+    </aside>
+    <p class="footer-bar">&copy;2017 All Rights Reserved | Weather Sentinel | 
+      <span>Saturday, 23 March 2019</span></p>
+  
+  </footer>
+
+  <script src="scripts/hamburger.js"></script>
+  <script src="scripts/windchill.js"></script>
+  <script src="scripts/wayfinding.js"></script>
+  <script src="scripts/cityinfo.js"></script>
+
+</body>
+</html>
