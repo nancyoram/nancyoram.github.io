@@ -31,72 +31,72 @@
             </ul>		
           </nav>
 
-          <section>
+          <main class="areas">
+            <section id="places">
 
-        </section>
-        
-          
+            </section>
+             <script>                                       
 
-        <footer>
-            <footer>
-    
-                <p class="footer-bar">&copy;2019 All Rights Reserved | Preston Weather Today | <span id="currentdate">Current Date Placeholder</span></p>
-              </footer>
-        </footer>
-        <script src="scripts/currentdate.js"></script>
-        <script src="scripts/hamburger-7.js"></script>
-        <data src="data/towndata.json"></data>
-        <script src="scripts/windchill.js"></script>
-
-        <script>
-            var section = document.querySelector('section');
-        
-            var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
-            var request = new XMLHttpRequest();
-            request.open('GET', requestURL);
-            request.responseType = 'json';
-            request.send();
-        
-            request.onload = function() {
-                var townInformation = request.response;
-                showTowns(townInformation);
-            }
-       
-            function showTowns(jsonObj) {
-                var towns = jsonObj['towns'];
-                var urls = { 'Preston': 'images/preston.jpg', 'Soda Springs': 'images/sodaSprings.jpg', 'Fish Haven': 'images/fishHaven.jpg'};
-    
-                for (var index = 0; index < towns.length; index++) {
-                    if (towns[index].name == "Preston" || towns[index].name == "Soda Springs" || towns[index].name == "Fish Haven") {
-                        // towns[index] is my item.
-                        var article = document.createElement('article');
-                        var header = document.createElement('h2');
-                        var p1 = document.createElement('p');
-                        var p2 = document.createElement('p');
-                        var p3 = document.createElement('p');
-                        var p4 = document.createElement('p');
-                        var image = document.createElement('img');
-    
-                        header.textContent = towns[index].name;
-                        p1.textContent = towns[index].motto;
-                        p2.textContent = 'Year Founded: ' + towns[index].yearFounded;
-                        p3.textContent = 'Population: ' + towns[index].currentPopulation;
-                        p4.textContent = 'Annual Rain Fall:' + towns[index].averageRainfall;
-                        image.src = urls[towns[index].name]; 
-            
-                        article.appendChild(header);
-                        article.appendChild(p1);
-                        article.appendChild(p2);
-                        article.appendChild(p3);
-                        article.appendChild(p4);
-                        article.appendChild(image);
-            
-                        section.appendChild(article);
+                var section = document.getElementById('places');
+                    var requestURL= 'https://byui-cit230.github.io/weather/data/towndata.json';
+                    var request = new XMLHttpRequest();
+                    request.open('GET', requestURL);
+                    request.responseType = 'json';
+                    request.send();
+                    request.onload = function() {
+                    var southPlace = request.response;
+                    idahoPlace(southPlace);
                     }
+                
+                function idahoPlace(jsonObj) {
+                var place = jsonObj['towns'];
+                    
+                for (var i = 0; i < place.length; i++) {
+                    if (place[i].name=="Preston" || place[i].name=="Soda Springs" || place[i].name=="Fish Haven"){
+                    var myArticle = document.createElement('article');
+                    var myH2 = document.createElement('h2');
+                    var myH4 = document.createElement('h4');
+                    var myPara1 = document.createElement('p');
+                    var myPara2 = document.createElement('p');
+                    var myPara3 = document.createElement('p');
+                    var myPara4 = document.createElement('p');
+                    var myPicts = document.createElement('img');
+                    //var myList = document.createElement('ul');
+
+                    myH2.textContent = place[i].name;
+                    myH4.textContent = place[i].motto;
+                    myPara1.textContent = 'Year Founded: ' + place[i].yearFounded;
+                    myPara2.textContent = 'Population: ' + place[i].currentPopulation;
+                    myPara3.textContent = 'Annual Rain Fall:' + place[i].averageRainfall;
+                    myPicts.src = 'images/image'+ i + '.jpeg';
+                    /*myPara4.textContent = 'Special Events: ';                                
+                    var placeEvents = place[i].events;
+                    for (var j = 0; j < placeEvents.length; j++) {
+                    var listItem = document.createElement('li');
+                    listItem.textContent = placeEvents[j];
+                    myList.appendChild(listItem);
+                    }*/
+
+                    myArticle.appendChild(myH2);
+                    myArticle.appendChild(myH4);
+                    myArticle.appendChild(myPara1);
+                    myArticle.appendChild(myPara2);
+                    myArticle.appendChild(myPara3);
+                    myArticle.appendChild(myPicts);
+                    myArticle.appendChild(myPara4);
+                    //myArticle.appendChild(myList);
+
+                    section.appendChild(myArticle);
+                }}
                 }
-            }
-        
             </script>
-    
-    </body>
-</html>
+         </main>
+         <footer class="clearfix">
+            <div class="bottom">&copy;2019 Weather Today | Nancy Oram | <span id="output"></span>
+                <script src="scripts/currentdate.js"></script>
+                
+            </div> 
+        </footer>
+    </div>
+</body>
+</html> 
