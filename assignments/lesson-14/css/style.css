@@ -22,7 +22,7 @@ body {
 	width:960px;
 	height:770px;
 	margin:auto;
-	background:rgba(255,255,255,0.5);
+	background:rgb(130, 196, 247);
 	box-shadow: 1px 1px 20px rgba(0,0,0,0.45);
 }
 
@@ -39,7 +39,7 @@ header {
 	height:100px;
 	float:left;
 	background:url('../img/logo.png');
-	background-color:rgba(207, 251, 203, 0.55);
+	background-color:rgb(130, 196, 247);
 	opacity:1.0;
 }
 
