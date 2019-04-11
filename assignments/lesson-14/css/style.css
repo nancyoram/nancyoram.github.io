@@ -36,7 +36,7 @@ header {
 .logo {
 	position:top;
 	width:200px;
-	height:300px;
+	height:100px;
 	float:left;
 	background:url('../img/logo.png');
 	background-color:rgb(235, 253, 212);
