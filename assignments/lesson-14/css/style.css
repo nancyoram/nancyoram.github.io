@@ -36,11 +36,11 @@ header {
 .logo {
 	position:top;
 	width:200px;
-    height:90px;
+    height:100px;
     overflow: hidden;
 	float:left;
 	background:url('../img/logo.png');
-	background-color:(none);
+	background-color:rgba(207, 251, 203, 0.55);
 	opacity:0;
 }
 
