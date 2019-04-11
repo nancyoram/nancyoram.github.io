@@ -40,7 +40,7 @@ header {
     overflow: hidden;
 	float:left;
 	background:url('../img/logo.png');
-	background-color:(transparent);
+	background-color:(none);
 	opacity:0;
 }
 
