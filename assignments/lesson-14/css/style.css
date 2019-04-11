@@ -256,6 +256,36 @@ main {
 	font-family: 'Raleway', sans-serif;
 }
 
+
+.btn {
+	text-transform: uppercase;
+	cursor: pointer;
+	font-family: Tahoma, Geneva, sans-serif;
+	color: #ffffff;
+	font-size: 18px;
+	font-weight: bold;
+	text-shadow: 0px 1px 1px #8a0000;
+	-moz-box-shadow: inset 0px -15px 30px 5px #de0d10;
+	-webkit-box-shadow: inset 0px -15px 30px 5px #de0d10;
+	box-shadow: inset 0px -15px 30px 5px #de0d10;
+	padding-top: 10px;
+	padding-right: 45px;
+	padding-bottom: 10px;
+	padding-left: 45px;
+	border-radius: 5px;
+	border-radius: 5px;
+	border-width: 1px;
+	border-color: #c77274;
+	border-style: solid;
+	transition-property: background;
+	transition-duration: 300ms;
+	transition-timing-function: ease;
+}
+
+.btn:active {
+	top: 1px;
+}
+
 footer {
 	position:relative;
 	height:50px;
