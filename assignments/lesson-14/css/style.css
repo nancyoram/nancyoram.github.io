@@ -34,7 +34,7 @@ header {
 }
 
 .logo {
-	position:top;
+	position:relative;
 	width:200px;
     height:100px;
     
