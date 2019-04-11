@@ -34,7 +34,7 @@ header {
 }
 
 .logo {
-	position:bottom;
+	position:top;
 	width:200px;
     height:90px;
     overflow: hidden;
