@@ -34,12 +34,12 @@ header {
 }
 
 .logo {
-	position:top;
+	position:relative;
 	width:200px;
 	height:100px;
 	float:left;
 	background:url('../img/logo.png');
-	background-color:rgb(235, 253, 212);
+	background-color:rgba(207, 251, 203, 0.55);
 	opacity:1.0;
 }
 
