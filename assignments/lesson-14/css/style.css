@@ -34,9 +34,9 @@ header {
 }
 
 .logo {
-	position:relative;
+	position:top;
 	width:200px;
-	height:100px;
+	height:300px;
 	float:left;
 	background:url('../img/logo.png');
 	background-color:rgb(235, 253, 212);
