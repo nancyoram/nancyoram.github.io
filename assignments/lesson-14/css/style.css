@@ -286,7 +286,11 @@ main {
 .btn:active {
 	top: 1px;
 }
-
+footer {
+	position:relative;
+	height:10px;
+	background:rgba(249, 251, 252, 0.86);
+}
 
 
 footer h5 {
