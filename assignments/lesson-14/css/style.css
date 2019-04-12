@@ -191,21 +191,21 @@ main {
 .box1 > hr {
 	margin-top:4px;
 	margin-bottom: 4px;
-	color:red;
+	color:rgba(112, 239, 225, 0.18);
 	border:1px solid;
 }
 
 .box2 > hr {
 	margin-top:4px;
 	margin-bottom: 4px;
-	color:orange;
+	color:rgba(112, 239, 225, 0.18);
 	border:1px solid;
 }
 
 .box3 > hr {
 	margin-top:4px;
 	margin-bottom: 4px;
-	color:rgb(0, 245, 255);
+	color:rgba(112, 239, 225, 0.18);
 	border:1px solid;
 }
 
