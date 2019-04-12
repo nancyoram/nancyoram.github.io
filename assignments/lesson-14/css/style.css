@@ -294,7 +294,7 @@ footer {
 }
 
 footer h5 {
-	position: absolute;
+	position: relative;
 	top: 8px;
 	left: 7px;
 	font-family: 'Raleway', sans-serif;
