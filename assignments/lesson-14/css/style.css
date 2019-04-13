@@ -45,10 +45,10 @@ header {
 
 nav {
 	position:relative;
-	width:710px;
+	width:720px;
 	height:100px;
 	float:left;
-	background:rgba(207, 251, 203, 0.55);
+	background:rgb(244, 247, 244);
 }
 
 nav > .navigation {
