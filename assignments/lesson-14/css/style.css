@@ -20,7 +20,7 @@ body {
 .container {
 	position:relative;
 	width:960px;
-	height:960px;
+	height:1060px;
 	margin:auto;
 	background:rgba(255,255,255,0.5);
 	box-shadow: 1px 1px 20px rgba(0,0,0,0.45);
@@ -156,7 +156,7 @@ main {
 .contentBoxes {
 	position:relative;
 	width:958px;
-	height:565px;
+	height:465px;
 	top:350px;
 }
 
