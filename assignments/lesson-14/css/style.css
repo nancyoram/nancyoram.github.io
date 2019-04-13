@@ -288,7 +288,7 @@ main {
 }
 footer {
 	position:relative;
-	height:10px;
+	height:0px;
 	background:rgba(249, 251, 252, 0.86);
 }
 
