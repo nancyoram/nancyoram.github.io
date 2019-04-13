@@ -28,39 +28,109 @@
         </header>
         <br><br><br>
         
-        <a href="oakland.html" button class="btn">OAKLAND</button></a>
-        <br> <br>
+        <!DOCTYPE html>
+<html>
+<head>
+<style>
+div.gallery {
+  border: 1px solid #ccc;
+}
 
-        <img src="img/oaklandtemple.jpg" alt="Oakland Temple" width="250" height="300">
+div.gallery:hover {
+  border: 1px solid #777;
+}
 
-        <br><br><br>
-        
-        <a href="sacramento.html" button class="btn">SACRAMENTO</button></a>
-        <br> <br>
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
 
-        <img src="img/sacramentotemple.jpg" alt="Sacremento Temple" width="250" height="300">
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
 
-        <br><br><br>
-        
-        <a href="losangeles.html" button class="btn">LOS ANGELES</button></a>
-        <br> <br>
+* {
+  box-sizing: border-box;
+}
 
-        <img src="img/losangelestemple.jpg" alt="Los Angeles Temple" width="250" height="300">
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
 
-        <br><br><br>
-        
-        <a href="sandiego.html" button class="btn">SAN DIEGO</button></a>
-        <br> <br>
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
 
-        <img src="img/sandiegotemple.jpg" alt="San Diego Temple" width="250" height="300">
-     
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+
+<h2>Temple Inns & Suites at California Temples</h2>
+<h4>Click on the temple you plan to visit.</h4>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img/oakland.html">
+      <img src="img/oaklandtemple.jpg" alt="Oakland Temple" width="600" height="400">
+    </a>
+    <div class="desc">Oakland Temple</div>
+  </div>
+</div>
 
 
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_forest.jpg">
+      <img src="img_forest.jpg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
 
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_lights.jpg">
+      <img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
 
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_mountains.jpg">
+      <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
 
+<div class="clearfix"></div>
 
+<div style="padding:6px;">
+  <p>This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller than 500px, the images will stack vertically (100%).</p>
+  <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
+</div>
 
+</body>
+</html>
 
 
 
